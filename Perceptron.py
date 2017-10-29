@@ -29,7 +29,7 @@ class Perceptron():
         #number of iteration 
         self.num_iter = 500
         
-        self.weights = np.zeros(X.shape[1])
+        self.weights = np.zeros(self.X.shape[1])
         
         self.UpdateWeights()
         
@@ -45,7 +45,7 @@ class Perceptron():
     def WeightUpdation(self):
         for x,y in zip(self.X,self.y):
             predicted_label = self.HypothesisPrediction(x)
-            error = eta*(y-predicted_label)
+            error = self.eta*(y-predicted_label)
             delta_w =  error *x
             self.weights = self.weights+delta_w
         
