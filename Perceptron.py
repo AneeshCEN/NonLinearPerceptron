@@ -25,9 +25,9 @@ class Perceptron():
         self.X = training_data
         self.y = label
         #Learning rate
-        self.eta = 0.01
+        self.eta = 0.05
         #number of iteration 
-        self.num_iter = 500
+        self.num_iter = 7000
         
         self.weights = np.zeros(self.X.shape[1])
         
