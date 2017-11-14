@@ -32,7 +32,7 @@ def feature_mapping(x1, x2, degree):
     return phi_x
     
     
-
+# provide degree of the polynomial
 degree = 3
     
 plt.scatter(X[y==1,0], X[y==1,1], c='r', label='class 1')
